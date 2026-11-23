@@ -1,0 +1,53 @@
+{
+  "name": "claude-automate",
+  "version": "1.0.0",
+  "description": "Plain English to working Claude automations. Maps user intent to Claude's native primitives — hooks, scheduled tasks, skills, agents, MCP servers — and generates tested, production-ready configurations. Grows with Claude: every new capability Claude adds becomes a building block this skill can wire up.",
+  "author": {
+    "name": "Orbitrove Technologies",
+    "url": "https://orbitrovetechnologies.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orbitrovetechnologies/claude-automate"
+  },
+  "keywords": [
+    "automation",
+    "hooks",
+    "scheduled-tasks",
+    "cron",
+    "workflow",
+    "agents",
+    "mcp",
+    "skills",
+    "no-code",
+    "plain-english"
+  ],
+  "skills": [
+    {
+      "name": "automate",
+      "path": "skills/automate/SKILL.md",
+      "description": "Build Claude automations from plain English. Say what you want automated, get working hooks, scheduled tasks, skills, agents, or MCP configs.",
+      "triggers": ["automate", "automation", "hook", "schedule", "workflow", "cron"]
+    },
+    {
+      "name": "automate-list",
+      "path": "skills/automate/SKILL.md",
+      "description": "List all automations created by this plugin.",
+      "triggers": ["automate list", "my automations"]
+    },
+    {
+      "name": "automate-debug",
+      "path": "skills/automate/SKILL.md",
+      "description": "Debug a broken automation.",
+      "triggers": ["automate debug", "automation broken"]
+    }
+  ],
+  "agents": [
+    {
+      "name": "automation-planner",
+      "path": "agents/automation-planner.md",
+      "description": "Plans complex multi-primitive automations"
+    }
+  ]
+}
